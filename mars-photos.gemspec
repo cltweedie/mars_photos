@@ -6,11 +6,11 @@ require 'mars/photos/version'
 Gem::Specification.new do |spec|
   spec.name          = "mars-photos"
   spec.version       = Mars::Photos::VERSION
-  spec.authors       = ["Chris Tweedie"]
-  spec.email         = ["cltweedie@gmail.com"]
+  spec.authors       = ["Chris Tweedie", "Patty Cupueran"]
+  spec.email         = ["cltweedie@gmail.com", "pa1809ty@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{A Ruby wrapper for the NASA Mars Rover Photos API.}
+  spec.description   = %q{A Ruby wrapper for the NASA Mars Rover Photos API.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
