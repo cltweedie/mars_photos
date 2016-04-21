@@ -36,6 +36,12 @@ describe MarsPhotos do
       end
     end
 
+    context 'when no sol or earthdate i_s provided' do
+      it 'raises an error' do
+        expect{ mp.get(rover: 'curiosity') }.to raise_error "You must provide a sol or earth date"
+      end
+    end
+
     context "when a block is supplied" do
       it "yields the array of photos" do
         photos = []
