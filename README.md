@@ -36,10 +36,10 @@ MarsPhotos.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') do |photo|
 end
 ```
 
-You can also instantiate the Rover class:
+You can instantiate the Rover class:
 
 ```ruby
-@curiosity = MarsPhotos::Rover.new
+@curiosity = MarsPhotos::Rover.new('curiosity')
 
 @curiosity.get(1000) # retrieves photos taken by curiosity on sol 1000
 ```
