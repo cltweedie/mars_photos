@@ -9,11 +9,31 @@ describe MarsPhotos do
   end
 
   describe '#get' do
-    it 'returns an array of photos' do
-      photos = mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
+    context 'when a rover, sol and cam is provided' do
+      it 'returns an array of photos' do
+        photos = mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
 
-      expect(photos.length).to be > 0
-      expect(photos.first['img_src']).to eq first_image
+        expect(photos.length).to be > 0
+        expect(photos.first['img_src']).to eq first_image
+      end
+    end
+
+    context 'when a rover, earth date and cam is provided' do
+      it 'returns an array of photos' do
+        photos = mp.get(rover: 'curiosity', earth_date: '2015-6-3', cam: 'fhaz')
+
+        expect(photos.length).to be > 0
+        expect(photos.first['img_src']).not_to be_nil
+      end
+    end
+
+    context 'when a rover and sol is provided' do
+      it 'returns an array of photos' do
+        photos = mp.get(rover: 'curiosity', sol: 1000)
+
+        expect(photos.length).to be > 0
+        expect(photos.first['img_src']).not_to be_nil
+      end
     end
 
     context "when a block is supplied" do
