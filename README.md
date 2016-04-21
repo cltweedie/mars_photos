@@ -36,6 +36,14 @@ MarsPhotos.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') do |photo|
 end
 ```
 
+You can also instantiate the Rover class:
+
+```ruby
+@curiosity = MarsPhotos::Rover.new
+
+@curiosity.get(1000) # retrieves photos taken by curiosity on sol 1000
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
