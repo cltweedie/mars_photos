@@ -7,7 +7,12 @@ describe MarsPhotos do
     expect(MarsPhotos::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')).not_to be_nil
+  it 'returns an array of photos' do
+    photos = mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
+
+    expect(photos.length).to be > 0
+
+    first_image = "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG"
+    expect(photos.first['img_src']).to eq first_image
   end
 end
