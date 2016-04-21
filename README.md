@@ -44,6 +44,28 @@ You can instantiate the Rover class:
 @curiosity.get(1000) # retrieves photos taken by curiosity on sol 1000
 ```
 
+### Curiosity's Cameras
+
+  Abbreviation | Camera
+  ------------ | ------------------------------
+   FHAZ        |  Front Hazard Avoidance Camera
+   RHAZ        |  Rear Hazard Avoidance Camera
+   MAST        |  Mast Camera
+   CHEMCAM     |  Chemistry and Camera Complex
+   MAHLI       |  Mars Hand Lens Imager
+   MARDI       |  Mars Descent Imager
+   NAVCAM      |  Navigation Camera
+
+### Opportunity and Spirit's Cameras
+
+  Abbreviation | Camera
+  ------------ | -----------------------------
+    FHAZ       |  Front Hazard Avoidance Camera
+    RHAZ       |  Rear Hazard Avoidance Camera
+    PANCAM     |  Panoramic Camera
+    NAVCAM     |  Navigation Camera
+    MINITES    |  Miniature Thermal Emission Spectrometer (Mini-TES)
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
