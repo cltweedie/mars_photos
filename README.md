@@ -1,8 +1,6 @@
-# Mars::Photos
+# MarsPhotos
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mars/photos`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A Ruby wrapper for NASAs Mars Rover Photos API.
 
 ## Installation
 
@@ -30,7 +28,7 @@ MarsPhotos.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
 
 This returns an array of the photos, each with an `img_src` attribute.
 
-You can also call this method and provide a block:
+You can also call this method with a block:
 
 ```ruby
 MarsPhotos.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') do |photo|
@@ -46,7 +44,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mars-photos.
+Bug reports and pull requests are welcome on GitHub at https://github.com/cltweedie/mars-photos.
 
 ## License
 
