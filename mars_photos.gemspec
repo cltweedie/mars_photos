@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'mars_photos/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "mars-photos"
+  spec.name          = "mars_photos"
   spec.version       = MarsPhotos::VERSION
   spec.authors       = ["Chris Tweedie", "Patty Cupueran"]
   spec.email         = ["cltweedie@gmail.com", "pa1809ty@gmail.com"]

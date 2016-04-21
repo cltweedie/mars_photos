@@ -7,7 +7,7 @@ A Ruby wrapper for NASAs Mars Rover Photos API.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'mars-photos'
+gem 'mars_photos'
 ```
 
 And then execute:

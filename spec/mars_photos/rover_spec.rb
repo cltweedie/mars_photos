@@ -7,8 +7,10 @@ describe MarsPhotos::Rover do
 		expect(rover.name).to eq("curiosity")
 	end
 
-	it "retrieves the photos for a rover when give sol" do
-		sol = 1000
-		expect(rover.get(sol)).not_to be_nil
-	end
+  describe '#get' do
+  	it "retrieves the photos for a rover when given the sol" do
+  		sol = 1000
+  		expect(rover.get(sol)).not_to be_nil
+  	end
+  end
 end
