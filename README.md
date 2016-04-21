@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install mars-photos
+    $ gem install mars_photos
 
 ## Usage
 
