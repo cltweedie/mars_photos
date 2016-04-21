@@ -22,7 +22,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To retrieve photos by providing the rover, sol and camera, you can use the `get` method on the MarsPhotos module:
+
+```ruby
+MarsPhotos.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
+```
+
+This returns an array of the photos, each with an `img_src` attribute.
+
+You can also call this method and provide a block:
+
+```ruby
+MarsPhotos.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') do |photo|
+  puts photo['img_src']
+end
+```
 
 ## Development
 
@@ -32,8 +46,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mars-photos. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mars-photos.
 
 ## License
 
