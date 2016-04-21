@@ -8,19 +8,21 @@ describe MarsPhotos do
     expect(MarsPhotos::VERSION).not_to be nil
   end
 
-  it 'returns an array of photos' do
-    photos = mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
+  describe '#get' do
+    it 'returns an array of photos' do
+      photos = mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
 
-    expect(photos.length).to be > 0
-    expect(photos.first['img_src']).to eq first_image
-  end
+      expect(photos.length).to be > 0
+      expect(photos.first['img_src']).to eq first_image
+    end
 
-  context "when a block is supplied" do
-    it "yields the array of photos" do
-      photos = []
-      mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') { |photo| photos << photo['img_src'] }
+    context "when a block is supplied" do
+      it "yields the array of photos" do
+        photos = []
+        mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') { |photo| photos << photo['img_src'] }
 
-      expect(photos.first).to eq first_image
+        expect(photos.first).to eq first_image
+      end
     end
   end
 end
