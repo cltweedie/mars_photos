@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pry'
 describe MarsPhotos::Rover do
   let(:rover) { MarsPhotos::Rover.new("curiosity") }
 
@@ -21,6 +22,31 @@ describe MarsPhotos::Rover do
       VCR.use_cassette 'rover/get_earth_date' do
         earth_date = "2015-6-3"
         response = rover.get(earth_date: earth_date)
+        expect(response.class).to eq(Array)
+        expect(response.first.keys.include?("img_src")).to be_truthy
+        expect(response.first.keys.include?("camera")).to be_truthy
+      end
+    end
+  end
+
+  describe 'get_by_sol' do
+    it "returns an array pictures by sol" do
+      VCR.use_cassette 'rover/get_sol' do
+        sol = 1000
+        response = rover.get_by_sol(sol)
+        expect(rover.respond_to? :get_by_sol).to be_truthy
+        expect(response.class).to eq(Array)
+        expect(response.first.keys.include?("img_src")).to be_truthy
+        expect(response.first.keys.include?("camera")).to be_truthy
+      end
+    end
+  end
+  describe 'get_by_sol' do
+    it "returns an array pictures by earth_date" do
+      VCR.use_cassette 'rover/get_earth_date' do
+        earth_date = '2015-6-3'
+        response = rover.get_by_earth_date(earth_date)
+        expect(rover.respond_to? :get_by_earth_date).to be_truthy
         expect(response.class).to eq(Array)
         expect(response.first.keys.include?("img_src")).to be_truthy
         expect(response.first.keys.include?("camera")).to be_truthy
