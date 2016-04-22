@@ -1,5 +1,11 @@
 module MarsPhotos
   class API
+    attr_reader :key
+
+    def initialize(key='DEMO_KEY')
+      @key = key
+    end
+
     def get(rover:, sol: nil, earth_date: nil, cam: nil)
       if sol
         date = "&sol=#{sol}"
@@ -11,7 +17,7 @@ module MarsPhotos
 
       camera = cam ? "&camera=#{cam}" : ""
 
-      response = HTTParty.get("https://api.nasa.gov/mars-photos/api/v1/rovers/#{rover}/photos?api_key=DEMO_KEY#{date}#{camera}")
+      response = HTTParty.get("https://api.nasa.gov/mars-photos/api/v1/rovers/#{rover}/photos?api_key=#{@key}#{date}#{camera}")
 
       if block_given?
         response['photos'].each { |photo| yield photo }

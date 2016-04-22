@@ -51,4 +51,17 @@ describe MarsPhotos::API do
       end
     end
   end
+
+  describe '#new' do
+    let(:api_with_key) { MarsPhotos::API.new('12345') }
+    let(:api_without_key) { MarsPhotos::API.new }
+
+    it 'sets the API key on the instance when one is provided' do
+      expect(api_with_key.key).to eq '12345'
+    end
+
+    it 'uses the default demo key when one is not provided' do
+      expect(api_without_key.key).to eq 'DEMO_KEY'
+    end
+  end
 end
