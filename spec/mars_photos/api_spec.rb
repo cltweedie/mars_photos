@@ -11,28 +11,34 @@ describe MarsPhotos::API do
   describe '#get' do
     context 'when a rover, sol and cam is provided' do
       it 'returns an array of photos' do
-        photos = mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
+        VCR.use_cassette 'api/get_rover_sol_cam' do
+          photos = mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
 
-        expect(photos.length).to be > 0
-        expect(photos.first['img_src']).to eq first_image
+          expect(photos.length).to be > 0
+          expect(photos.first['img_src']).to eq first_image
+        end
       end
     end
 
     context 'when a rover, earth date and cam is provided' do
       it 'returns an array of photos' do
-        photos = mp.get(rover: 'curiosity', earth_date: '2015-6-3', cam: 'fhaz')
+        VCR.use_cassette 'api/get_rover_earth_date_cam' do
+          photos = mp.get(rover: 'curiosity', earth_date: '2015-6-3', cam: 'fhaz')
 
-        expect(photos.length).to be > 0
-        expect(photos.first['img_src']).not_to be_nil
+          expect(photos.length).to be > 0
+          expect(photos.first['img_src']).not_to be_nil
+        end
       end
     end
 
     context 'when a rover and sol is provided' do
       it 'returns an array of photos' do
-        photos = mp.get(rover: 'curiosity', sol: 1000)
+        VCR.use_cassette 'api/get_rover_sol' do
+          photos = mp.get(rover: 'curiosity', sol: 1000)
 
-        expect(photos.length).to be > 0
-        expect(photos.first['img_src']).not_to be_nil
+          expect(photos.length).to be > 0
+          expect(photos.first['img_src']).not_to be_nil
+        end
       end
     end
 
@@ -44,10 +50,12 @@ describe MarsPhotos::API do
 
     context 'when a block is supplied' do
       it 'yields the array of photos' do
-        photos = []
-        mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') { |photo| photos << photo['img_src'] }
+        VCR.use_cassette 'api/get_rover_sol_cam' do
+          photos = []
+          mp.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') { |photo| photos << photo['img_src'] }
 
-        expect(photos.first).to eq first_image
+          expect(photos.first).to eq first_image
+        end
       end
     end
   end
