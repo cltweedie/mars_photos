@@ -36,7 +36,7 @@ describe MarsPhotos do
       end
     end
 
-    context 'when no sol or earthdate i_s provided' do
+    context 'when no sol or earthdate is provided' do
       it 'raises an error' do
         expect{ mp.get(rover: 'curiosity') }.to raise_error "You must provide a sol or earth date"
       end

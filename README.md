@@ -28,6 +28,12 @@ MarsPhotos.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
 
 This returns an array of the photos, each with an `img_src` attribute.
 
+You can provide an earth date in the format YYYY-MM-DD instead of a sol:
+
+```ruby
+MarsPhotos.get(rover: 'curiosity', earth_date: '2015-6-3', cam: 'fhaz')
+```
+
 You can also call this method with a block:
 
 ```ruby
@@ -43,6 +49,10 @@ You can instantiate the Rover class:
 
 @curiosity.get(1000) # retrieves photos taken by curiosity on sol 1000
 ```
+
+### Sols
+
+Sol is a time measurement representing the number of solar days since the rover landed on Mars. It starts from 0.
 
 ### Curiosity's Cameras
 
