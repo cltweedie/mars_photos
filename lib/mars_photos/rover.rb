@@ -6,16 +6,16 @@ module MarsPhotos
     end
 
     def get(parameter = {})
+      response = HTTParty.get(build_url(parameter))
+      response['photos']
+    end
+
+    private
+    def build_url(parameter)
       url_rovers = "https://api.nasa.gov/mars-photos/api/v1/rovers/"
-      if parameter.keys.include? :earth_date
-        url = "#{url_rovers}#{self.name}/photos?earth_date=#{parameter[:earth_date]}&api_key=DEMO_KEY"
-        response = HTTParty.get(url)
-        response['photos']
-      else
-        url = "#{url_rovers}#{self.name}/photos?sol=#{parameter[:sol]}&api_key=DEMO_KEY"
-        response = TTParty.get(url)
-        response['photos']
-      end
+      key = parameter.keys.first.to_s
+      value = parameter[parameter.keys.first]
+      "#{url_rovers}#{self.name}/photos?#{key}=#{value}&api_key=DEMO_KEY"
     end
   end
 end
