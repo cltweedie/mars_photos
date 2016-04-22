@@ -1,6 +1,6 @@
 # MarsPhotos
 
-[![Gem Version](https://badge.fury.io/rb/mars_photos.svg)](https://badge.fury.io/rb/mars_photos) [![Test Coverage](https://codeclimate.com/github/cltweedie/mars_photos/badges/coverage.svg)](https://codeclimate.com/github/cltweedie/mars_photos/coverage)
+[![Gem Version](https://badge.fury.io/rb/mars_photos.svg)](https://badge.fury.io/rb/mars_photos) [![Build Status](https://travis-ci.org/cltweedie/mars_photos.svg?branch=master)](https://travis-ci.org/cltweedie/mars_photos) [![Test Coverage](https://codeclimate.com/github/cltweedie/mars_photos/badges/coverage.svg)](https://codeclimate.com/github/cltweedie/mars_photos/coverage)
 
 A Ruby wrapper for NASAs Mars Rover Photos API.
 
