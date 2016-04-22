@@ -27,10 +27,10 @@ For basic usage, instantiate an API object either with or without an API key (if
 @api = MarsPhotos::API.new('YOUR_KEY_HERE')
 ```
 
-Retrieve photos by rover, sol and camera like this:
+Retrieve photos by rover and sol like this:
 
 ```ruby
-@api.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
+@api.get(rover: 'curiosity', sol: 1000)
 ```
 
 This returns an array of the photos, each with an `img_src` attribute.
@@ -38,13 +38,19 @@ This returns an array of the photos, each with an `img_src` attribute.
 You can provide an earth date in the format YYYY-MM-DD instead of a sol:
 
 ```ruby
-@api.get(rover: 'curiosity', earth_date: '2015-6-3', cam: 'fhaz')
+@api.get(rover: 'curiosity', earth_date: '2015-6-3')
+```
+
+For photos from a specific camera, just specify a `cam` in the method's parameters:
+
+```ruby
+@api.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
 ```
 
 You can call this method with a block:
 
 ```ruby
-@api.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') do |photo|
+@api.get(rover: 'curiosity', sol: 1000) do |photo|
   puts photo['img_src']
 end
 ```
