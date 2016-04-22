@@ -2,10 +2,10 @@ require 'pry'
 
 module MarsPhotos
   class Rover
-    attr_accessor :name
-    def initialize(name)
-      @name = name
-      @key = 'DEMO_KEY'
+    attr_accessor :name, :key
+    def initialize(params = {})
+      @name = params[:name]
+      @key = params[:key] ? params[:key] : 'DEMO_KEY'
     end
 
     def get(parameters = {})
