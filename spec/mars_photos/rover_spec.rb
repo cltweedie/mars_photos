@@ -41,7 +41,7 @@ describe MarsPhotos::Rover do
       end
     end
   end
-  describe 'get_by_sol' do
+  describe 'get_by_earth_date' do
     it "returns an array pictures by earth_date" do
       VCR.use_cassette 'rover/get_earth_date' do
         earth_date = '2015-6-3'
