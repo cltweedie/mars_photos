@@ -60,7 +60,10 @@ You can also instantiate the Rover class:
 ```ruby
 @curiosity = MarsPhotos::Rover.new('curiosity')
 
-@curiosity.get(1000) # retrieves photos taken by curiosity on sol 1000
+@curiosity.get(sol: 1000)
+@curiosity.get_by_sol(1000)
+@curiosity.get(earth_date: '2015-6-3')
+@curiosity.get_by_earth_date('2015-6-3')
 ```
 
 ### Rovers
