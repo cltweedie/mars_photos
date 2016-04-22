@@ -83,27 +83,19 @@ Images are available from three rovers:
 
 Sol is a time measurement representing the number of Martian solar days since the rover landed. It starts from 0.
 
-### Curiosity's Cameras
+### Cameras
 
-  Abbreviation | Camera
-  ------------ | ------------------------------
-   FHAZ        |  Front Hazard Avoidance Camera
-   RHAZ        |  Rear Hazard Avoidance Camera
-   MAST        |  Mast Camera
-   CHEMCAM     |  Chemistry and Camera Complex
-   MAHLI       |  Mars Hand Lens Imager
-   MARDI       |  Mars Descent Imager
-   NAVCAM      |  Navigation Camera
-
-### Opportunity and Spirit's Cameras
-
-  Abbreviation | Camera
-  ------------ | -----------------------------
-    FHAZ       |  Front Hazard Avoidance Camera
-    RHAZ       |  Rear Hazard Avoidance Camera
-    PANCAM     |  Panoramic Camera
-    NAVCAM     |  Navigation Camera
-    MINITES    |  Miniature Thermal Emission Spectrometer (Mini-TES)
+Abbreviation | Camera                             | Curiosity | Spirit | Opportunity
+------------ | -----------------------------------|-----------|--------|------------
+ FHAZ        |  Front Hazard Avoidance Camera     |  &#10003; |&#10003;|&#10003;
+ RHAZ        |  Rear Hazard Avoidance Camera      |  &#10003; |&#10003;|&#10003;
+ MAST        |  Mast Camera                       |  &#10003; |        |
+ CHEMCAM     |  Chemistry and Camera Complex      |  &#10003; |        |
+ MAHLI       |  Mars Hand Lens Imager             |  &#10003; |        |
+ MARDI       |  Mars Descent Imager               |  &#10003; |        |
+ NAVCAM      |  Navigation Camera                 |  &#10003; |&#10003;|&#10003;
+ PANCAM      |  Panoramic Camera                  |           |&#10003;|&#10003;
+ MINITES     |  Mini Thermal Emission Spectrometer|           |&#10003;|&#10003;
 
 ## Development
 
