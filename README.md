@@ -63,9 +63,19 @@ You can also instantiate the Rover class:
 @curiosity.get(1000) # retrieves photos taken by curiosity on sol 1000
 ```
 
+### Rovers
+
+Images are available from three rovers:
+
+  Rover        | Landing Date
+  ------------ | ------------------------------
+   Spirit      |  January 4, 2004
+   Opportunity |  January 25, 2004
+   Curiosity   |  August 6, 2012
+
 ### Sols
 
-Sol is a time measurement representing the number of solar days since the rover landed on Mars. It starts from 0.
+Sol is a time measurement representing the number of Martian solar days since the rover landed. It starts from 0.
 
 ### Curiosity's Cameras
 
