@@ -20,10 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-To retrieve photos by providing the rover, sol and camera, you can use the `get` method on the MarsPhotos module:
+For basic usage, instantiate an API object either with or without an API key (if you don't provide one it will be set to the demo key, which allows for 30 requests per IP address per hour, and a maximum of 50 requests per day). Get an API key from NASA [here](https://api.nasa.gov/index.html#apply-for-an-api-key).
 
 ```ruby
-MarsPhotos.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
+@api = MarsPhotos::API.new # Sets API key to 'DEMO_KEY'
+@api = MarsPhotos::API.new('YOUR_KEY_HERE')
+```
+
+Retrieve photos by rover, sol and camera like this:
+
+```ruby
+@api.get(rover: 'curiosity', sol: 1000, cam: 'fhaz')
 ```
 
 This returns an array of the photos, each with an `img_src` attribute.
@@ -31,18 +38,18 @@ This returns an array of the photos, each with an `img_src` attribute.
 You can provide an earth date in the format YYYY-MM-DD instead of a sol:
 
 ```ruby
-MarsPhotos.get(rover: 'curiosity', earth_date: '2015-6-3', cam: 'fhaz')
+@api.get(rover: 'curiosity', earth_date: '2015-6-3', cam: 'fhaz')
 ```
 
-You can also call this method with a block:
+You can call this method with a block:
 
 ```ruby
-MarsPhotos.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') do |photo|
+@api.get(rover: 'curiosity', sol: 1000, cam: 'fhaz') do |photo|
   puts photo['img_src']
 end
 ```
 
-You can instantiate the Rover class:
+You can also instantiate the Rover class:
 
 ```ruby
 @curiosity = MarsPhotos::Rover.new('curiosity')
