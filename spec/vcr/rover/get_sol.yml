@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Age:
-      - '1'
+      - '0'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 22 Apr 2016 10:55:37 GMT
+      - Fri, 22 Apr 2016 12:41:32 GMT
       Etag:
       - W/"67d93d1fa4978e761cec9df4c484623b"
       Server:
@@ -49,9 +49,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '39'
       X-Request-Id:
-      - 947c0be6-ac4f-4f7e-b24b-dee41de72500
+      - a0b5cdd5-661f-463a-8607-74ff9f0713ed
       X-Runtime:
-      - '0.230391'
+      - '0.260835'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -187,5 +187,5 @@ http_interactions:
         Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
         Hazard Avoidance Camera"}]}}]}'
     http_version: 
-  recorded_at: Fri, 22 Apr 2016 10:55:37 GMT
+  recorded_at: Fri, 22 Apr 2016 12:41:32 GMT
 recorded_with: VCR 3.0.0
