@@ -22,5 +22,14 @@ module MarsPhotos
       response = HTTParty.get(url)
       response['photos']
     end
+
+    def get_by_sol_and_cam(parameters)
+      sol = parameters[:sol]
+      cam = parameters[:cam]
+      url_rovers = "https://api.nasa.gov/mars-photos/api/v1/rovers/"
+      url = "#{url_rovers}#{name}/photos?sol=#{sol}&camera=#{cam}&api_key=DEMO_KEY"
+      response = HTTParty.get(url)
+      response['photos']
+    end
   end
 end
