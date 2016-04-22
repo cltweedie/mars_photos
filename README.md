@@ -1,3 +1,5 @@
+[![Test Coverage](https://codeclimate.com/github/cltweedie/mars_photos/badges/coverage.svg)](https://codeclimate.com/github/cltweedie/mars_photos/coverage)
+
 # MarsPhotos
 
 A Ruby wrapper for NASAs Mars Rover Photos API.
