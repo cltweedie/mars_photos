@@ -11,7 +11,7 @@ module MarsPhotos::URL
     end
 
     camera = params[:cam] ? "&camera=#{params[:cam]}" : ""
-
-    "#{base_url}#{params[:rover]}/photos?api_key=#{params[:key]}#{date}#{camera}"
+    page = params[:page] ? "&page=#{params[:page]}" : ""
+    "#{base_url}#{params[:rover]}/photos?api_key=#{params[:key]}#{date}#{camera}#{page}"
   end
 end
