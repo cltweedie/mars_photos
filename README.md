@@ -24,7 +24,7 @@ For basic usage, instantiate an API object either with or without an API key (if
 
 ```ruby
 @api = MarsPhotos::API.new # Sets API key to 'DEMO_KEY'
-@api = MarsPhotos::API.new('fh873h48')
+@api = MarsPhotos::API.new('YOUR_KEY_HERE')
 ```
 
 Retrieve photos by rover, sol and camera like this:
