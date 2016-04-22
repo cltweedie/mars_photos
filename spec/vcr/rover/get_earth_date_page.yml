@@ -1,0 +1,191 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&earth_date=2014-6-3&page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 22 Apr 2016 17:49:22 GMT
+      Etag:
+      - W/"dcae6377bca05df1e5413fb69a29d3f2"
+      Server:
+      - openresty
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      Via:
+      - 1.1 vegur, http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '37'
+      X-Request-Id:
+      - bddf77cd-104c-4412-9050-56525d1d2fe4
+      X-Runtime:
+      - '0.389906'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photos":[{"id":37941,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455113198EDR_D0340144TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37942,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455113122EDR_D0340138TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37943,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455113038EDR_D0340132TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37944,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112964EDR_D0340126TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37945,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112886EDR_D0340120TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37946,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112812EDR_D0340114TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37947,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112737EDR_D0340108TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37948,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112660EDR_D0340102TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37949,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112586EDR_D0340096TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37950,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112512EDR_D0340090TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37951,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112439EDR_D0340084TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37952,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112366EDR_D0340078TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37953,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112294EDR_D0340072TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37954,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112218EDR_D0340066TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37955,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112147EDR_D0340060TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37956,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112076EDR_D0340054TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37957,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455112002EDR_D0340048TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37958,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455111928EDR_D0340042TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37959,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455111855EDR_D0340036TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37960,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455111775EDR_D0340030TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37961,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455111698EDR_D0340024TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37962,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455111622EDR_D0340018TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37963,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455111546EDR_D0340012TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":37964,"sol":649,"camera":{"id":16,"name":"NAVCAM","rover_id":6,"full_name":"Navigation
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00649/opgs/edr/ncam/NRB_455111470EDR_D0340006TRAV00227M_.JPG","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}},{"id":440974,"sol":649,"camera":{"id":22,"name":"MAST","rover_id":5,"full_name":"Mast
+        Camera"},"img_src":"http://mars.jpl.nasa.gov/msl-raw-images/msss/00649/mcam/0649ML0027570040303063E01_DXXX.jpg","earth_date":"2014-06-03","rover":{"id":5,"name":"Curiosity","landing_date":"2012-08-06","max_sol":1318,"max_date":"2016-04-21","total_photos":250748,"cameras":[{"name":"FHAZ","full_name":"Front
+        Hazard Avoidance Camera"},{"name":"NAVCAM","full_name":"Navigation Camera"},{"name":"MAST","full_name":"Mast
+        Camera"},{"name":"CHEMCAM","full_name":"Chemistry and Camera Complex"},{"name":"MAHLI","full_name":"Mars
+        Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
+        Hazard Avoidance Camera"}]}}]}'
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 17:49:22 GMT
+recorded_with: VCR 3.0.1

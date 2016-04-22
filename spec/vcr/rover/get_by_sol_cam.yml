@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 22 Apr 2016 12:41:33 GMT
+      - Fri, 22 Apr 2016 18:18:18 GMT
       Etag:
       - W/"78c598916aad635525a9176ace487378"
       Server:
@@ -47,15 +47,15 @@ http_interactions:
       X-Ratelimit-Limit:
       - '40'
       X-Ratelimit-Remaining:
-      - '37'
+      - '34'
       X-Request-Id:
-      - 496384cb-458a-4a4b-91db-067ccabbb797
+      - 31829659-75c2-4f2c-852b-036f1eac0e48
       X-Runtime:
-      - '0.172892'
+      - '0.143282'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '473'
       Connection:
       - keep-alive
     body:
@@ -72,5 +72,5 @@ http_interactions:
         Hand Lens Imager"},{"name":"MARDI","full_name":"Mars Descent Imager"},{"name":"RHAZ","full_name":"Rear
         Hazard Avoidance Camera"}]}}]}'
     http_version: 
-  recorded_at: Fri, 22 Apr 2016 12:41:33 GMT
-recorded_with: VCR 3.0.0
+  recorded_at: Fri, 22 Apr 2016 18:18:18 GMT
+recorded_with: VCR 3.0.1
