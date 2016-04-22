@@ -1,12 +1,20 @@
 require 'spec_helper'
 require 'pry'
 describe MarsPhotos::Rover do
-  let(:rover) { MarsPhotos::Rover.new("curiosity") }
+  let(:rover) { MarsPhotos::Rover.new(name: "curiosity") }
+  params = { name: "curiosity", key: "112358"}
+  let(:rover_with_api_key) { MarsPhotos::Rover.new(params) }
 
-  it "creates a curiosity rover" do
-    expect(rover.name).to eq("curiosity")
+  describe "new" do
+    context "when providing a name for a rover" do
+      it "creates a curiosity rover without an key with one is not provided" do
+        expect(rover.key).to eq("DEMO_KEY")
+      end
+      it "creates a curiosity rover with an associated key when one is provided" do
+        expect(rover_with_api_key.key).to eq("112358")
+      end
+    end
   end
-
   describe '#get' do
     context 'when sol is provided' do
       it "retrieves the photos in an array for a rover when given the sol" do
