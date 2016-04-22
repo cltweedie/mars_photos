@@ -8,7 +8,7 @@ module MarsPhotos
 
     def get(params={})
       params[:key] = @key
-      url = MarsPhotos::URL.build(params)
+      url = URL.build(params)
       response = HTTParty.get(url)
 
       if block_given?
