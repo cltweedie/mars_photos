@@ -81,7 +81,7 @@ describe MarsPhotos::Rover do
 
   describe 'get by sol and by cam' do
     it "returns an array of photos on a given sol and from a specific camera" do
-      VCR.use_cassette 'rover/get_by_sol_and_cam' do
+      VCR.use_cassette 'rover/get_by_sol_cam' do
         sol = 1000
         cam = 'fhaz'
         response = rover.get(sol: sol, cam: cam)
