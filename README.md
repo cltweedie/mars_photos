@@ -1,6 +1,6 @@
-[![Test Coverage](https://codeclimate.com/github/cltweedie/mars_photos/badges/coverage.svg)](https://codeclimate.com/github/cltweedie/mars_photos/coverage)
-
 # MarsPhotos
+
+[![Test Coverage](https://codeclimate.com/github/cltweedie/mars_photos/badges/coverage.svg)](https://codeclimate.com/github/cltweedie/mars_photos/coverage)
 
 A Ruby wrapper for NASAs Mars Rover Photos API.
 
@@ -63,8 +63,9 @@ You can also instantiate the Rover class:
 @curiosity = MarsPhotos::Rover.new('curiosity')
 
 @curiosity.get(sol: 1000)
-@curiosity.get_by_sol(1000)
 @curiosity.get(earth_date: '2015-6-3')
+
+@curiosity.get_by_sol(1000)
 @curiosity.get_by_earth_date('2015-6-3')
 ```
 
