@@ -58,7 +58,7 @@ describe MarsPhotos::Rover do
       VCR.use_cassette 'rover/get_by_sol_and_cam' do
         sol = 1000
         cam = 'fhaz'
-        response = rover.get_by_sol_and_cam(sol: sol, cam: cam)
+        response = rover.get(sol: sol, cam: cam)
         expect(response.class).to eq(Array)
         expect(response.first.keys.include?("img_src")).to be_truthy
         expect(response.first.keys.include?("camera")).to be_truthy
