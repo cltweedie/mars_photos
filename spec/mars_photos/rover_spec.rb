@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pry'
 describe MarsPhotos::Rover do
   let(:rover) { MarsPhotos::Rover.new("curiosity") }
 
@@ -7,23 +8,48 @@ describe MarsPhotos::Rover do
   end
 
   describe '#get' do
-    it "retrieves the photos in an array for a rover when given the sol" do
-      VCR.use_cassette 'rover/get_sol' do
-        sol = 1000
-        response = rover.get(sol: sol)
-        expect(response.class).to eq(Array)
-        expect(response.first.keys.include?("img_src")).to be_truthy
-        expect(response.first.keys.include?("camera")).to be_truthy
+    context 'when sol is provided' do
+      it "retrieves the photos in an array for a rover when given the sol" do
+        VCR.use_cassette 'rover/get_sol' do
+          sol = 1000
+          response = rover.get(sol: sol)
+          expect(response.class).to eq(Array)
+          expect(response.first.keys.include?("img_src")).to be_truthy
+          expect(response.first.keys.include?("camera")).to be_truthy
+        end
+      end
+      context 'pagination' do
+        it "gives the results for a page" do
+          VCR.use_cassette 'rover/get_sol_page' do
+            sol = 1000
+            page = 5
+            response = rover.get(sol: sol, page: page)
+            expect(response.first['id']).to eq(425421)
+            expect(response.first['camera']['name']).to eq("MAST")
+          end
+        end
       end
     end
-
-    it "retrieves photos in array for a rover when given the earth date" do
-      VCR.use_cassette 'rover/get_earth_date' do
-        earth_date = "2015-6-3"
-        response = rover.get(earth_date: earth_date)
-        expect(response.class).to eq(Array)
-        expect(response.first.keys.include?("img_src")).to be_truthy
-        expect(response.first.keys.include?("camera")).to be_truthy
+    context 'when earth_date is provided' do
+      it "retrieves photos in array for a rover when given the earth date" do
+        VCR.use_cassette 'rover/get_earth_date' do
+          earth_date = "2015-6-3"
+          response = rover.get(earth_date: earth_date)
+          expect(response.class).to eq(Array)
+          expect(response.first.keys.include?("img_src")).to be_truthy
+          expect(response.first.keys.include?("camera")).to be_truthy
+        end
+      end
+      context 'pagination' do
+        it "gives the results for a page" do
+          VCR.use_cassette 'rover/get_earth_date_page' do
+            earth_date = "2014-6-3"
+            page = 5
+            response = rover.get(earth_date: earth_date, page: page)
+            expect(response.first['id']).to eq(37941)
+            expect(response.first['camera']['name']).to eq("NAVCAM")
+          end
+        end
       end
     end
   end
