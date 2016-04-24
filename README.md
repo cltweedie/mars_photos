@@ -60,7 +60,8 @@ end
 You can also instantiate the Rover class:
 
 ```ruby
-@curiosity = MarsPhotos::Rover.new('curiosity')
+@curiosity = MarsPhotos::Rover.new(name: 'curiosity') # uses demo key
+@curiosity = MarsPhotos::Rover.new(name: 'curiosity', key: 'YOUR_KEY_HERE')
 
 @curiosity.get(sol: 1000)
 @curiosity.get(earth_date: '2015-6-3')
